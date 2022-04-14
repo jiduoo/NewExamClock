@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>考试时钟</title>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="background2"></div>
+    <div id="set">
+        <div class="set_button " onclick="openCity('London')">样式</div>
+        <div class="set_button " onclick="openCity('Paris')">安排</div>
+        <div class="set_button " onclick="openCity('Tokyo')">关于</div>
+        <div class="close" onclick="set_close()"> x </div>
+
+        <div id="London" class="set_select ">
+            <h2>样式</h2>
+        </div>
+        <div id="Paris" class="set_select " style="display:none">
+            <h2>安排</h2>
+        </div>
+        <div id="Tokyo" class="set_select " style="display:none">
+            <h2>关于</h2>
+        </div>
+    </div>
+
+
+    <div id="title">
+        沉着冷静&nbsp;&nbsp;诚信考试
+    </div>
+    <span id="title2">
+        考试类型
+    </span>
+    <span class="dropdown">
+        <span>年级</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi2" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+        <div class="dropdown-content">
+            <p onclick="changekey(0)">高一年级</p>
+            <p onclick="changekey(1)">高二理科</p>
+            <p onclick="changekey(2)">高二文科</p>
+            <p onclick="changekey(3)">高三理科</p>
+            <p onclick="changekey(4)">高三文科</p>
+        </div>
+    </span>
+    <span class="setup" onclick="set_open()">
+        <svg width="32" height="32" fill="currentColor" class="bi"
+            viewBox="0 0 16 16">
+            <path
+                d="m11.42 2 3.428 6-3.428 6H4.58L1.152 8 4.58 2h6.84zM4.58 1a1 1 0 0 0-.868.504l-3.428 6a1 1 0 0 0 0 .992l3.428 6A1 1 0 0 0 4.58 15h6.84a1 1 0 0 0 .868-.504l3.429-6a1 1 0 0 0 0-.992l-3.429-6A1 1 0 0 0 11.42 1H4.58z" />
+            <path
+                d="M6.848 5.933a2.5 2.5 0 1 0 2.5 4.33 2.5 2.5 0 0 0-2.5-4.33zm-1.78 3.915a3.5 3.5 0 1 1 6.061-3.5 3.5 3.5 0 0 1-6.062 3.5z" />
+        </svg>
+        设置
+    </span>
+
+    <div id="bar">
+        <div id="bar-line">90%</div>
+    </div>
+
+    <div class="cards">
+        <div id="left" class="card">
+            <div id="subject">
+                语文
+            </div>
+            <div id="time">
+                12:00~13:00
+            </div>
+        </div>
+        <div id="center" class="card">
+            12:00
+        </div>
+        <div id="right" class="card">
+            <span id="endtime">
+                <span id="number">30</span><span id="suffix">min</span>
+            </span>
+            <div id="sub">
+                距离结束
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <span>本网站由2020级11班加零编写</span>
+        <span>友好社团：音幻宝中 民乐社 篮裁社 宝中INSTREET（汪姐nb）推理社（JJnb）舞蹈队</span>
+        <span>版本：0.1</span>
+    </footer>
+    <script src="./style.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
