@@ -28,7 +28,7 @@ class page {
 class now {
     constructor(itime) {
         this.time = itime;
-        // this.key = 1;
+        this.key = 1;
         this.center_time = this.centertime();
     }
     setp(ip) {
@@ -41,12 +41,12 @@ class now {
         t += data.getHours();
         let m = data.getMinutes();
         m = m < 10 ? '0' + m : m;
-        t += ":" + m;
+        t += ":" + m
         return t;
     }
-    // show_center_time() {
-    //     mainpage.show(this.center_time, "第一次月考");
-    // }
+    show_center_time() {
+        mainpage.show(this.center_time, "第一次月考");
+    }
     // 这个是一个测试用的函数
 }
 
@@ -59,13 +59,11 @@ function changekey(ikey) {
 let mainpage = new page();
 
 update();
-
 function update() {
     let nowtime = new now(new Date());
 
     class timer {
         constructor(title2, subject, start, end) {
-            // a=Date.now();
             this.title2 = title2;
             this.subject = subject;
             this.start = start;
@@ -132,54 +130,52 @@ function update() {
 
 
 
-timerbar = [
-        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+    timerbar = [
+        [new timer("高二理科期中", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
-        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+        [new timer("高二理科期中", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
-        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+        [new timer("高二理科期中", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
-        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+        [new timer("高二理科期中", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
-        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+        [new timer("高二理科期中", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
-        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+        [new timer("高二理科期中", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
-
 
 
     ];
-    
     nowtime.setp(0);
 
     for (i = 0; i < timerbar[key.key].length; i++) {
