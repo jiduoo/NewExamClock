@@ -78,7 +78,7 @@ function update() {
         setCountdown(end) {
             if (Math.ceil((end.getTime() - nowtime.time.getTime()) / 1000 / 60) > 60) {
                 this.suffix = "h"
-                return Math.ceil((end.getTime() - nowtime.time.getTime()) / 1000 / 60 / 60);
+                return ((end.getTime() - nowtime.time.getTime()) / 1000 / 60 / 60).toFixed(1);
             }
             else {
                 this.suffix = "min";
@@ -132,49 +132,50 @@ function update() {
 
 
 
-    timerbar = [
-        [new timer("水考模拟考", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("水考模拟考", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("水考模拟考", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("水考模拟考", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("水考模拟考", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("水考模拟考", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+timerbar = [
+        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
-        [new timer("水考模拟考", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("水考模拟考", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("水考模拟考", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("水考模拟考", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("水考模拟考", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("水考模拟考", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
-        [new timer("水考模拟考", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("水考模拟考", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("水考模拟考", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("水考模拟考", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("水考模拟考", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("水考模拟考", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
-        [new timer("水考模拟考", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("水考模拟考", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("水考模拟考", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("水考模拟考", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("水考模拟考", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("水考模拟考", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
-        [new timer("水考模拟考", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("水考模拟考", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("水考模拟考", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("水考模拟考", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("水考模拟考", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("水考模拟考", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
-        [new timer("水考模拟考", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
-        new timer("水考模拟考", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
-        new timer("水考模拟考", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
-        new timer("水考模拟考", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
-        new timer("水考模拟考", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
-        new timer("水考模拟考", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
+        [new timer("高二理科期中考试（文科绕行）", "语文", new Date(2022, 4, 3, 9, 30), new Date(2022, 4, 3, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "物理", new Date(2022, 4, 3, 14, 20), new Date(2022, 4, 3, 16, 00)),
+        new timer("高二理科期中考试（文科绕行）", "生物", new Date(2022, 4, 3, 16, 30), new Date(2022, 4, 3,18, 10)),
+        new timer("高二理科期中考试（文科绕行）", "英语", new Date(2022, 4, 4, 7, 50), new Date(2022, 4, 4, 9, 50)),
+        new timer("高二理科期中考试（文科绕行）", "化学", new Date(2022, 4, 4, 10, 20), new Date(2022, 4, 4, 12, 00)),
+        new timer("高二理科期中考试（文科绕行）", "数学", new Date(2022, 4, 4, 14, 20), new Date(2022, 4, 4, 16, 20)),
         ],
+
 
 
     ];
