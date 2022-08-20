@@ -44,6 +44,6 @@ function bg(v, p) {
   document.getElementsByClassName("background")[0].style.backgroundImage = "url(https://i.imgtg.com/202" + gallery[v].list[p % (gallery[v].list.length)].id + ".jpg)";
  
   clearInterval(bg.interval);
-  bg.interval = setInterval(bg, 30*1000);
+  bg.interval = setInterval(bg, 120*1000);
   return document.getElementById("bg").innerHTML = "背景：" + gallery[v].list[p % (gallery[v].list.length)].name + "@" + gallery[v].vol;
 }
