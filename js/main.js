@@ -82,7 +82,11 @@ class date {
         ipage.showtime(this.settime(), num);
         ipage.showsup(this.setsup(inow), num);
         ipage.showsub(this.setsub(inow), num);
-        mainpage.showcutdown(this.setcutdown(inow, this.end), num);
+        if(inow.time.getTime()<this.start.getTime()){
+            mainpage.showcutdown(this.setcutdown(inow, this.start), num);
+        }
+        else{mainpage.showcutdown(this.setcutdown(inow, this.end), num);}
+        
         mainpage.showbarline(this.setbarline(inow), num);
     }
     settime() {
@@ -134,56 +138,76 @@ class date {
         return re;
     }
 }
-
+class date2 extends date {
+    constructor(subject, start, end) {
+      super(" ", subject, start, end);
+      //重新去书写run，无论传入日期的年月日，都可以跑。可以把默认的年月日改成我的生日
+      
+      //title2加入高考倒计时功能
+    }
+        run(inow, ipage, num) {
+        
+        ipage.showsubject(this.subject, num);
+        ipage.showtime(this.settime(), num);
+        ipage.showsup(this.setsup(inow), num);
+        ipage.showsub(this.setsub(inow), num);
+        if(inow.time.getTime()<this.start.getTime()){
+            mainpage.showcutdown(this.setcutdown(inow, this.start), num);
+        }
+        else{mainpage.showcutdown(this.setcutdown(inow, this.end), num);}
+        
+        mainpage.showbarline(this.setbarline(inow), num);
+    }
+   
+  }
 datearray = [
     [
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
 
     ],
      [
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
 
     ],
      [
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
 
     ],
      [
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
 
     ],
      [
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
 
     ],
-     [
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
-        new date("课本基础知识大赛", "数学", new Date(2022, 7, 23, 16, 30), new Date(2022, 7, 23, 18, 00)),
+];
+datearray2 = [
+    [
+        new date2( "晨读1", new Date(2005, 0, 12, 7 , 5 ), new Date(2005, 0, 12, 7 , 25)),
+        new date2( "英语 ", new Date(2005, 0, 12, 16, 30), new Date(2005, 0, 12, 18, 00)),
 
-    ],
+    ],   
 
 ];
 // mode类，用来集合各种运行函数
@@ -194,7 +218,7 @@ class mode{
     key = 3;
     changekey(ikey){
         this.key = ikey;
-        let keycontent = ['高一年级','高二理科','高二文科','高三理科','高三文科'];
+        let keycontent = ['高一年级','高二理科','高二文科','高三理科','高三文科','高三日常'];
         mainpage.showkey(keycontent[this.key]);
     }
 }
@@ -209,23 +233,45 @@ function check(imodego){
     } 
     }
 }
+function check2(imodego){
+    let inowtime = new now(new Date(2005,0,12,new Date().getHours,new Date().getMinutes));
+    for(i=0;i<datearray2[0].length;i++){  
+        if(datearray2[0][i].start.getTime()<=inowtime.time.getTime()&&inowtime.time.getTime()<datearray2[imodego.key][i].end.getTime() ){
+        swiper.slideTo(i,1000);
+        break;
+    } 
+    }
+}
 
 
 
 update();
 function update() {
-    for (i = 0; i < mainpage.title.length; i++) {
-        mainpage.showtitle("沉着冷静 诚信考试", i);
-    }
     let nowtime = new now(new Date());
     for (i = 0; i < mainpage.center.length; i++) {
         mainpage.showcenter(nowtime.centertime(), i);
     }
-    
-    for(i=0;i<datearray[modego.key].length;i++){   
-        datearray[modego.key][i].run(nowtime,mainpage,i); 
+    if(modego.key==5){
+        const CEE=new Date(2023,5,7);
+        let dayd=Math.ceil((CEE.getTime()-nowtime.time.getTime())/1000/60/60/24);
+        for (i = 0; i < mainpage.center.length; i++) {
+            mainpage.showtitle2("距离高考还有"+dayd+"天", i);
+        }
+        nowtime.time=new Date(2005,0,12,nowtime.time.getHours(),nowtime.time.getMinutes());
+        for(i=0;i<datearray2[0].length;i++){   
+            datearray2[0][i].run(nowtime,mainpage,i); 
+        }
     }
-    check(modego)
+    else{
+        for(i=0;i<datearray[modego.key].length;i++){   
+            datearray[modego.key][i].run(nowtime,mainpage,i); 
+        }
+    }
+    
+    if(modego.key==5){
+        check2(0);
+    }
+    else{check(modego)}
     setTimeout(update, 500);
     
 }
