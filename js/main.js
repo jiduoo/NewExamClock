@@ -113,13 +113,25 @@ class date {
         }
     }
     setsub(inow) {
-        if (Math.ceil(this.end.getTime() - inow.time.getTime()<0)) return " ";
-        if (Math.ceil((this.end.getTime() - inow.time.getTime()) / 1000 / 60) > 60) {
-            return "h";
+        if(inow.time.getTime()<this.start.getTime()){
+            if (Math.ceil(this.start.getTime() - inow.time.getTime()<0)) return " ";
+            if (Math.ceil((this.start.getTime() - inow.time.getTime()) / 1000 / 60) > 60) {
+                return "h";
+            }
+            else {
+                return "min";
+            }
         }
-        else {
-            return "min";
+        else{
+            if (Math.ceil(this.end.getTime() - inow.time.getTime()<0)) return " ";
+            if (Math.ceil((this.end.getTime() - inow.time.getTime()) / 1000 / 60) > 60) {
+                return "h";
+            }
+            else {
+                return "min";
+            }
         }
+        
     }
     setcutdown(inow, end) {
         if (Math.ceil(end.getTime() - inow.time.getTime()>0)){
