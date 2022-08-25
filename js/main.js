@@ -174,43 +174,36 @@ class date2 extends date {
   }
 datearray = [
     [
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("尚未录入", "语文", new Date(2022, 7, 26, 7 , 40), new Date(2022, 7, 26, 10, 10)),
+
+    ],
+    [
+        new date("尚未录入", "语文", new Date(2022, 7, 26, 7 , 40), new Date(2022, 7, 26, 10, 10)),
 
     ],
      [
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("尚未录入", "语文", new Date(2022, 7, 25, 20, 47), new Date(2022, 7, 25, 20, 48)),
+        new date("尚未录入", "语文", new Date(2022, 7, 25, 20, 49), new Date(2022, 7, 25, 20, 50)),
+        new date("尚未录入", "语文", new Date(2022, 7, 25, 20, 51), new Date(2022, 7, 25, 20, 52)),
+        new date("尚未录入", "语文", new Date(2022, 7, 25, 20, 53), new Date(2022, 7, 25, 20, 54)),
 
     ],
      [
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("高三年级诊断性考试", "语文", new Date(2022, 7, 26, 7 , 40), new Date(2022, 7, 26, 10, 10)),
+        new date("高三年级诊断性考试", "物理", new Date(2022, 7, 26, 10, 40), new Date(2022, 7, 26, 12, 20)),
+        new date("高三年级诊断性考试", "英语", new Date(2022, 7, 26, 14, 20), new Date(2022, 7, 26, 16, 20)),
+        new date("高三年级诊断性考试", "化学", new Date(2022, 7, 26, 16, 50), new Date(2022, 7, 26, 18, 30)),
+        new date("高三年级诊断性考试", "数学", new Date(2022, 7, 27, 7 , 50), new Date(2022, 7, 27, 9 , 50)),
+        new date("高三年级诊断性考试", "生物", new Date(2022, 7, 27, 10, 20), new Date(2022, 7, 27, 12, 00)),
 
     ],
      [
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-
-    ],
-     [
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
-        new date("课本基础知识大赛", "英语", new Date(2022, 7, 24, 16, 30), new Date(2022, 7, 24, 18, 00)),
+        new date("高三年级诊断性考试", "语文", new Date(2022, 7, 26, 7 , 40), new Date(2022, 7, 26, 10, 10)),
+        new date("高三年级诊断性考试", "历史", new Date(2022, 7, 26, 10, 40), new Date(2022, 7, 26, 12, 20)),
+        new date("高三年级诊断性考试", "英语", new Date(2022, 7, 26, 14, 20), new Date(2022, 7, 26, 16, 20)),
+        new date("高三年级诊断性考试", "地理", new Date(2022, 7, 26, 16, 50), new Date(2022, 7, 26, 18, 30)),
+        new date("高三年级诊断性考试", "数学", new Date(2022, 7, 27, 7 , 50), new Date(2022, 7, 27, 9 , 50)),
+        new date("高三年级诊断性考试", "政治", new Date(2022, 7, 27, 10, 20), new Date(2022, 7, 27, 12, 00)),
 
     ],
 ];
@@ -238,8 +231,8 @@ let modego = new mode();
 
 function check(imodego){
     let inowtime = new now(new Date());
-    for(i=0;i<datearray[imodego.key].length;i++){  
-        if(datearray[imodego.key][i].start.getTime()<=inowtime.time.getTime()&&inowtime.time.getTime()<datearray[imodego.key][i].end.getTime() ){
+    for(i=1;i<datearray[imodego.key].length;i++){  
+        if(datearray[imodego.key][i-1].end.getTime()<=inowtime.time.getTime()&&inowtime.time.getTime()<datearray[imodego.key][i].end.getTime() ){
         swiper.slideTo(i,1000);
         break;
     } 
@@ -247,8 +240,8 @@ function check(imodego){
 }
 function check2(imodego){
     let inowtime = new now(new Date(2005,0,12,new Date().getHours,new Date().getMinutes));
-    for(i=0;i<datearray2[0].length;i++){  
-        if(datearray2[0][i].start.getTime()<=inowtime.time.getTime()&&inowtime.time.getTime()<datearray2[imodego.key][i].end.getTime() ){
+    for(i=1;i<datearray2[0].length;i++){  
+        if(datearray2[0][i-1].end.getTime()<=inowtime.time.getTime()&&inowtime.time.getTime()<datearray2[imodego.key][i].end.getTime() ){
         swiper.slideTo(i,1000);
         break;
     } 
